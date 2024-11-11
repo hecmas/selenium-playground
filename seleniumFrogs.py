@@ -20,8 +20,8 @@ import sys
 # Load selenium  #
 ###################
 
-emailList = []
-password = ""
+emailList =  ["youremai@gmail.com"]
+password = "yourpassword"
 
 ## get frogs
 while True:
@@ -32,13 +32,16 @@ while True:
             defualtWaitSeconds = 15
             defaultWaitObject = WebDriverWait(driver, defualtWaitSeconds)
             findElementsInstance = findElements(defaultWaitObject)
-            driver.get("https://zupass.org/#/login")
+            driver.get("https://zupass.org/#/?folder=FrogCrypto")
 
             ###################
             # Load ZuPass   #
             ###################
             initializeZupass(driver, findElementsInstance, email, password)
 
+            ###################
+            # Mine Frogs   #
+            ###################
             getFrogs(driver, findElementsInstance)
             print("Wait for next hunt")
             sleep(40)

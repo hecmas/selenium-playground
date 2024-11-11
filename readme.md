@@ -19,3 +19,9 @@
    - `pip3 install pyvirtualdisplay` (optional)
 3. Get your chrome driver of your version here: https://sites.google.com/chromium.org/driver/downloads?authuser=0 and save it as `chromedriver` in the `./drivers` folder
 4. Run the script `python3 seleniumFrogs.py`
+
+
+## Optional
+
+In case to have a virtual enviroment on python run `source .venv/bin/activate`
+
