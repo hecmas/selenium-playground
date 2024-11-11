@@ -18,9 +18,10 @@
    - `sudo apt install -y xvfb` (optional)
    - `pip3 install pyvirtualdisplay` (optional)
 
-3. ## NOT NECESSARY ANYMORE ## Get your chrome driver of your version here: https://sites.google.com/chromium.org/driver/downloads?authuser=0 and save it as `chromedriver` in the `./drivers` folder
+3. (Optional, only in case it does not work) Get your chrome driver of your version here: https://sites.google.com/chromium.org/driver/downloads?authuser=0 and save it as `chromedriver` in the `./drivers` folder
 4. Run the script `python3 seleniumFrogs.py`
 
+5. Optional: You can uncomment this line: `#chrome_options.add_argument("--headless=new")` to avoid "see" the browser
 
 ## Optional
 
