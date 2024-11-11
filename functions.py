@@ -25,8 +25,12 @@ def initializeZupass(driver, findElements, email, password):
     driver.get("https://zupass.org/#/?folder=FrogCrypto")
     sleep(10)
 
-
 def getFrogs(driver, findElements):
+    # change iframe
+    iframe = findElements.element_exist_xpath("//iframe[@src='https://frogcrypto.vercel.app/']")
+    driver.switch_to.frame(iframe)
+
+    # mine frogs
     findElements.element_exist_xpath('//button[contains(text(), "search SWAMP")]').click() # Confirm Button
     # findElements.element_exist_xpath('//*[contains(text(), "search CELESTIAL POND")]').click() # Confirm Button
     # findElements.element_exist_xpath('//*[contains(text(), "search THE CAPITAL")]').click() # Confirm Button
